@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.0",
+    "nodemon": "^2.0.20"
+  },
+  "name": "ll-js-ts",
+  "description": "",
+  "version": "1.0.0",
+  "main": "quiz.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon HomeWork/rick-morty/stage1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larysalozynska/LL-JS-TS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larysalozynska/LL-JS-TS/issues"
+  },
+  "homepage": "https://github.com/larysalozynska/LL-JS-TS#readme"
+}

@@ -48,7 +48,7 @@ function showAFlat(flatNumber) {
 function markAsSold(flatNumber) {
 
   flatNumber.soldStatus = true;
-  console.log(flatNumber)
+  console.log(flatNumber.soldStatus)
   
 }
 //markAsSold(flatBase.flat2)
@@ -94,15 +94,14 @@ const flatBase2 = [
 ];
 
 function filterBySpace(flatsArray, desiredSpace) {
-  const sortedFlatArray = [];
- 
-  sortedFlatArray.push(flatsArray.filter(elm => elm.space > desiredSpace ));
-
-  return console.log(sortedFlatArray);
+  
+  const sortedArray2 = flatsArray.filter(elm => elm.space > desiredSpace );
+  console.log(sortedArray2);
+  return sortedArray2; 
 
 };
 
-//filterBySpace(flatBase2, 50)
+//filterBySpace(flatBase2, 50); 
 
 
 //4 A function getShortFlatInfo(flat) that would return only address, numberOfRooms and salesPrice
@@ -111,6 +110,4 @@ function getShortFlatInfo(flatNumber) {
   return `Flat address: ${flatNumber.address}, \n\Numbers of rooms: ${flatNumber.numberOfRooms}, \n\Sales Price: ${flatNumber.salePrice}`
 
 }
-//console.log(getShortFlatInfo(flatBase.flat2));
-
-
+console.log(getShortFlatInfo(flatBase.flat2));
