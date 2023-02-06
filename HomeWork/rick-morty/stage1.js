@@ -48,8 +48,9 @@ function residentsQuantity () {
 //#5 Implement a function that would return a list of all locations’ URLs.
 
 function urlList () {
-
-    return resultsData.results.forEach(el => console.log(el.url))
+    const listOfUrls = [];
+    resultsData.results.forEach(el => listOfUrls.push(el.url))
+    return listOfUrls;
 }
 //urlList()
 
@@ -66,9 +67,7 @@ function urlList () {
 
  function changeFormat (array) {
     
-    const formatedObject = {
-        dimentions: []
-    }
+    const formatedObject = [];
 
     array.forEach((el) => {
         const newObject = {
@@ -80,10 +79,10 @@ function urlList () {
             }
         ]
        }
-       formatedObject.dimentions.push(newObject)
+       formatedObject.push(newObject)
     })
     
-    return formatedObject
+    return formatedObject[0]
 }
 
-console.log(changeFormat(resultsData.results))
+//console.log(changeFormat(resultsData.results))
